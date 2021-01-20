@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de trabajo</title>
+    <link rel="stylesheet" href="css//estilos.css">
+<script src="fomulario.js"></script>
+</head>
+
+<body>
+     
+    <h1 id="bb" >Registro de trabajador</h1>
+    <form action="proceso.html" method="POST" id="miformulario"  name="miformulario" onsubmit="return validacion()">
+      <table><h1></h1>
+        
+   <tr>
+        <td>Rut:</td>
+        <td><input  placeholder="Sin puntos ni guion" type="text" name="Rut" id="Rut" maxlength="11" required="" pattern="[0-9]+" ></td>
+    </tr>
+    <tr>
+        <td>Nombre:</td>
+        <td><input type="text" name="nombre" id="nombre" required=""  maxlength="30"  ></td>
+    </tr>
+    <tr>
+        <td>Apellido paterno:</td>
+        <td><input type="text" name="apellidop" id="apellidop" required=""  maxlength="30" ></td>
+    </tr>
+    <tr>
+        <td>Apellido materno:</td>
+        <td><input type="text" name="apellidom" id="apellidom" required=""  maxlength="30" ></td>
+    </tr>
+    <tr required="">
+        <td required="">Sexo</td>
+        <td>
+            <input type="radio" name="sexo" id="sexoH" value="H">Masculino
+            <input type="radio" name="sexo" id="sexoM" value="M">Femenino
+        </td>
+    </tr>
+    
+
+    <tr required="" > 
+        <td>Nivel de estudio</td>
+        <td><input type="checkbox" value="si" name="pregunta" id="notiene"> No tiene </td>
+        <tr><td></td><td><input type="checkbox" value="no" name="Tecnico" id="Tecnico"> Tecnico</td></tr>
+        <tr><td></td><td><input type="checkbox" value="no" name="Universitario" id="Universitario"> Universitario</td></tr>
+    </tr>
+    <tr>
+        <td>Ciudad de Nacimiento</td>
+        <td><select name="" >
+            <option value="" id="RA">Rancagua</option>
+            <option value="" id="LI">Lima</option>
+            <option value="" id="AR">Arequipa</option>
+            <option value="" id="PI">Pisco</option>
+            <option value="" id="TR">Trujillo</option></td>
+        
+            </select>
+    </tr>
+    <tr>
+        <td>CURRICULUM</td>
+        <td>
+            <input type="file" name="nombre_campo" id="CURRICULUM">
+        </td>
+        
+    </tr>
+    <tr> 
+        <td>FOTO</td>
+        <td>
+            <input type="file" name="nombre_campo" id="foto">
+        </td>
+
+    </tr>
+</div>
+
+    <tr >
+        <td ><p id="caña2">
+        <input type="submit" name="" id="" value="Registrar trabajador" id="enviar">
+        <input type="reset" name="" value="Limpiar" id="limpiar">
+    </p></td></tr>
+    </table>
+
+    
+            
+    </form>
+</body>
+</html>
